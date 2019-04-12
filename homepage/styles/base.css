@@ -1,0 +1,94 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: #777788;
+}
+
+.clearfix {
+    clear: both;
+}
+
+header {
+    text-align: center;
+}
+
+header > .title {
+    display: inline-block;
+    color: #3771A1;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+    vertical-align: middle;
+}
+
+header img {
+    vertical-align: middle;
+    margin-right: 24px;
+}
+
+main {
+    margin: 0;
+    padding: 15px;
+}
+
+footer {
+    margin-top: 40px;
+    border-top: 1px solid #CCCCCC;
+    text-align: right;
+}
+
+footer a {
+    display: inline-block;
+    color: #777788;
+    margin: 15px 10% 0 0;
+}
+
+@media (min-width: 992px) {
+    .animate {
+      animation-duration: 0.3s;
+      -webkit-animation-duration: 0.3s;
+      animation-fill-mode: both;
+      -webkit-animation-fill-mode: both;
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateY(1rem);
+      opacity: 0;
+    }
+    100% {
+      transform:translateY(0rem);
+      opacity: 1;
+    }
+    0% {
+      transform: translateY(1rem);
+      opacity: 0;
+    }
+  }
+  
+  @-webkit-keyframes slideIn {
+    0% {
+      -webkit-transform: transform;
+      -webkit-opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      -webkit-opacity: 1;
+    }
+    0% {
+      -webkit-transform: translateY(1rem);
+      -webkit-opacity: 0;
+    }
+  }
+  
+  .slideIn {
+    -webkit-animation-name: slideIn;
+    animation-name: slideIn;
+  }
+  
+  /* Other styles for the page not related to the animated dropdown */
+  
+  body {
+  }
